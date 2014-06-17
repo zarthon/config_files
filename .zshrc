@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="sporty_256"
+export ZSH_THEME="steeef"
 
 # Set to this to use case-sensitive completion
 export CASE_SENSITIVE="true"
@@ -18,7 +18,11 @@ export CASE_SENSITIVE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git lol osx)
 source $ZSH/oh-my-zsh.sh
-
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/Dropbox/UCSD/Quarter3/cse223b/gopath
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/home/zarthon/Projects/UCSD/cse210/apache-maven-3.2.1/bin/
 # Customize to your needs...
 
 dict() { 
